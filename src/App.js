@@ -1,9 +1,7 @@
-import './App.css';
-
 function App() {
   return (
     <div className="App">
-      <h1>Welcome to the React Air Bnb Set Up</h1>
+      <h1 style={{ textAlign: "center" }}>Welcome to the React Air Bnb Set Up</h1>
     </div>
   );
 }
