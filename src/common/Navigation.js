@@ -1,5 +1,5 @@
 import { faDotCircle } from "@fortawesome/free-regular-svg-icons";
-import { faBars, faCog, faSms, faUserCircle } from "@fortawesome/free-solid-svg-icons";
+import { faAlignLeft, faCog, faSms, faUserCircle } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
@@ -34,7 +34,7 @@ const Navigation = () => {
           </h6>
           <h5 className="px-2 d-block d-lg-none" style={{ cursor: "pointer" }}>
             <FontAwesomeIcon
-              icon={faBars}
+              icon={faAlignLeft}
               onClick={() => {
                 setShowSideNav(!showSideNav);
                 playOn();

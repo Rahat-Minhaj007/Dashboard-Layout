@@ -3,7 +3,7 @@ import { Offcanvas } from "react-bootstrap";
 import AccordionSideNav from "./AccordionSideNav";
 
 const ResponsiveSideNav = ({ setShowSideNav, showSideNav }) => (
-  <Offcanvas show={showSideNav} onHide={() => setShowSideNav(false)} style={{ width: "85%" }}>
+  <Offcanvas show={showSideNav} onHide={() => setShowSideNav(false)} style={{ width: "85%", overflowY: "auto" }}>
     <div
       style={{
         listStyle: "none",

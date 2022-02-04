@@ -1,5 +1,5 @@
 import { faCreditCard } from "@fortawesome/free-regular-svg-icons";
-import { faBars, faMoneyBillWave, faTimes } from "@fortawesome/free-solid-svg-icons";
+import { faBorderAll, faMoneyBillWave, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { Accordion } from "react-bootstrap";
@@ -9,13 +9,13 @@ import pop2 from "../assets/audio/pop2.mp3";
 import pop from "../assets/audio/popUp.mp3";
 import adminData from "../fakeData/AdminActivities";
 import userData from "../fakeData/UserActivities";
-import "../styles/SideNav.css";
+import "../styles/AccordionSideNav.css";
 
 const AccordionSideNav = ({ setShowSideNav, showSideNav }) => {
   const [playOn] = useSound(pop);
   const [play] = useSound(pop2);
   return (
-    <Accordion>
+    <Accordion defaultActiveKey="0">
       {showSideNav && (
         <>
           <div className="d-flex justify-content-end p-3">
@@ -61,7 +61,7 @@ const AccordionSideNav = ({ setShowSideNav, showSideNav }) => {
             borderTop: "none",
           }}
         >
-          <FontAwesomeIcon icon={faBars} className="text-success" /> <span className="px-2 ">Dashboard</span>
+          <FontAwesomeIcon icon={faBorderAll} className="text-success" /> <span className="px-2 ">Dashboard</span>
         </Accordion.Item>
       </Link>
       <Accordion.Item
@@ -141,7 +141,7 @@ const AccordionSideNav = ({ setShowSideNav, showSideNav }) => {
         </Accordion.Body>
       </Accordion.Item>
       <Link
-        to="/dashboard"
+        to="/payment"
         style={{ textDecoration: "none", color: "black" }}
         onClick={
           showSideNav
