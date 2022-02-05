@@ -13,13 +13,13 @@ const adminData = [
     id: 2,
     name: "Operator Credential",
     icon: <FontAwesomeIcon icon={faLock} className="text-success" />,
-    path: "/",
+    path: "/operator-credential",
   },
   {
     id: 3,
     name: "Available User",
     icon: <FontAwesomeIcon icon={faUser} className="text-success" />,
-    path: "",
+    path: "/available-user",
   },
 ];
 

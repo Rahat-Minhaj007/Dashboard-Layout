@@ -43,11 +43,11 @@ const AccordionSideNav = ({ setShowSideNav, showSideNav }) => {
         onClick={
           showSideNav
             ? () => {
-                playOn();
+                play();
                 setShowSideNav(false);
               }
             : () => {
-                playOn();
+                play();
               }
         }
       >
@@ -146,11 +146,11 @@ const AccordionSideNav = ({ setShowSideNav, showSideNav }) => {
         onClick={
           showSideNav
             ? () => {
-                playOn();
+                play();
                 setShowSideNav(false);
               }
             : () => {
-                playOn();
+                play();
               }
         }
       >

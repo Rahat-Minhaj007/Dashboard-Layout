@@ -4,14 +4,14 @@ import MainLayout from "../common/MainLayout";
 import ReuseAbleBreadCrumb from "../common/ReuseAbleBreadCrumb";
 import Role from "../common/Role";
 
-const CompanyWallet = () => (
+const OperatorCredential = () => (
   <MainLayout>
-    <MainHeading title="Company Wallet">
-      <ReuseAbleBreadCrumb secondTitle="companyWallet" path="/company-wallet" />
+    <MainHeading title="Operator Credential">
+      <ReuseAbleBreadCrumb secondTitle="operatorCredential" path="/operator-credential" />
     </MainHeading>
 
     <Role />
   </MainLayout>
 );
 
-export default CompanyWallet;
+export default OperatorCredential;

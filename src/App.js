@@ -3,6 +3,7 @@ import PageNotFound from "./common/PageNotFound";
 import WrapperLayout from "./common/WrapperLayout";
 import CompanyWalletScreen from "./screens/CompanyWalletScreen";
 import DashboardScreen from "./screens/DashboardScreen";
+import OperatorCredentialScreen from "./screens/OperatorCredentialScreen";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
           <Route path="/" exact component={DashboardScreen} />
           <Route path="/dashboard" exact component={DashboardScreen} />
           <Route path="/company-wallet" exact component={CompanyWalletScreen} />
+          <Route path="/operator-credential" exact component={OperatorCredentialScreen} />
           <Route path="*" exact component={PageNotFound} />
         </Switch>
       </WrapperLayout>

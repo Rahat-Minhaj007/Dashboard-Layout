@@ -2,7 +2,7 @@ import React from "react";
 import { Breadcrumb } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-const BreadCrumb = ({ secondTitle, thirdTitle, path }) => (
+const ReuseAbleBreadCrumb = ({ secondTitle, thirdTitle, path }) => (
   <div className="pe-2">
     <Breadcrumb style={{ borderRadius: "5px" }}>
       {!secondTitle && !thirdTitle ? (
@@ -34,4 +34,4 @@ const BreadCrumb = ({ secondTitle, thirdTitle, path }) => (
   </div>
 );
 
-export default BreadCrumb;
+export default ReuseAbleBreadCrumb;
