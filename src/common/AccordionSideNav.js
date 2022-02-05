@@ -7,8 +7,8 @@ import { Link } from "react-router-dom";
 import useSound from "use-sound";
 import pop2 from "../assets/audio/pop2.mp3";
 import pop from "../assets/audio/popUp.mp3";
-import adminData from "../fakeData/AdminActivities";
-import userData from "../fakeData/UserActivities";
+import adminData from "../fakeData/AdminActivitiesData";
+import userData from "../fakeData/UserActivitiesData";
 import "../styles/AccordionSideNav.css";
 
 const AccordionSideNav = ({ setShowSideNav, showSideNav }) => {

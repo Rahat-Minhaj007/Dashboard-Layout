@@ -2,15 +2,16 @@ import React from "react";
 import MainHeading from "../common/MainHeading";
 import MainLayout from "../common/MainLayout";
 import ReuseAbleBreadCrumb from "../common/ReuseAbleBreadCrumb";
-import DashboardHeader from "./dashboard/DashboardHeader";
+import Role from "../common/Role";
 
-const Dashboard = () => (
+const AvailableUser = () => (
   <MainLayout>
-    <MainHeading title="Dashboard">
-      <ReuseAbleBreadCrumb />
+    <MainHeading title="Available User">
+      <ReuseAbleBreadCrumb secondTitle="availableUser" path="/available-user" />
     </MainHeading>
-    <DashboardHeader />
+
+    <Role />
   </MainLayout>
 );
 
-export default Dashboard;
+export default AvailableUser;
